@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Hi+Melody&family=Indie+Flower&display=swap');
+
+body {
+  background-color: #b1cd9d;
+  font-family: 'Indie Flower', 'Hi Melody', cursive;
+}
+
+/* 헤더 영역 */
+.header-title {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.header-img {
+  height: 230px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-text {
+  font-family: 'Indie Flower', cursive;
+  display: block;
+  margin: 0 auto;
+  font-size: 50px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+.todo-input {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 18px;
+  padding-left: 10px;
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #869b74;
+}
+
+.todo-input::placeholder {
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.todo-input:focus {
+  outline: 0;
+}
+
+.add-btn {
+  background-color: black;
+  box-shadow: 2px 2px 2px 2px darkolivegreen;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  width: 50px;
+  height: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.header-img > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 80%;
+  border: 2px solid black;
+}
+
+.search-li {
+  margin: 0 auto;
+  margin-top: 65px;
+}
+
+
+.select-li {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 200px;
+  padding-bottom: 10px;
+}
+
+select {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  box-shadow: 2px 2px 2px 2px darkolivegreen;
+}
+
+.mark-li {
+  padding: 0 20px;
+}
+
+
+/* 리스트 영역 */
+.check-box {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px 0 20px;
+}
+
+.check-box:checked {
+  text-decoration: line-through;
+}
+
+.todo-list {
+  padding-bottom: 50px;
+}
+
+.list {
+  height: 50px;
+  width: 800px;
+  margin: 18px auto;
+  display: flex;
+  align-items: center;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 18px;
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px #869b74;
+  border-radius: 10px;
+  position: relative;
+}
+
+.title:hover {
+  cursor: url(free-icon-cursor.png), pointer;
+  /* <a href="https://www.flaticon.com/kr/free-icons/-" title="딸깍 하는 소리 아이콘">딸깍 하는 소리 아이콘 
+  제작자: Freepik - Flaticon</a> */
+}
+
+.title:focus {
+  outline: 0;
+  border-bottom: 2px dashed black;
+}
+
+.date-btn {
+  position: absolute;
+  right: 20px;
+}
+
+.date {
+  padding-right: 20px;
+  color: #343941;
+  font-size: 15px;
+  cursor: default;
+}
+
+.delete-btn {
+  font-family: 'Indie Flower', cursive;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  width: 45px;
+  height: 23px;
+  font-size: 14px;
+  font-weight: 600;
+}
